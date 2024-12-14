@@ -15,10 +15,10 @@ background_color = st.selectbox(
     ["white", "black", "blue", "yellow", "green", "red"]
 )
 
-font_style = st.selectbox(
-    "Selecciona el estilo de letra", 
-    ["arial", "times new roman", "courier", "helvetica", "comic sans ms"]
-)
+#font_style = st.selectbox(
+#    "Selecciona el estilo de letra", 
+#    ["arial", "times new roman", "courier", "helvetica", "comic sans ms"]
+#)
 
 if uploaded_file is not None:
     # Leer el archivo
@@ -26,8 +26,8 @@ if uploaded_file is not None:
     text = stringio.read()
     
     # Mostrar el texto cargado (opcional)
-    st.subheader("Texto cargado:")
-    st.write(text[:500])  # Muestra los primeros 500 caracteres
+    ##st.subheader("Texto cargado:")
+    ##st.write(text[:500])  # Muestra los primeros 500 caracteres
 
     # Generar la nube de palabras con las opciones seleccionadas
     wordcloud = WordCloud(
