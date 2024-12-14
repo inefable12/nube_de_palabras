@@ -5,6 +5,7 @@ from io import StringIO
 
 # Título de la app
 st.title("Generador de Nube de Palabras")
+st.write("Autor: Jesus Alvarado-Huayhuaz")
 
 # Subir archivo de texto
 uploaded_file = st.file_uploader("Sube un archivo de texto", type="txt")
